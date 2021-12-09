@@ -1,12 +1,12 @@
 apiVersion: v1
-           kind: Pod
-          metadata:
-          name: employee-pod
-          labels:
-          app: web
-          spec:
-          containers:
-          - name: web-ctr
-           image: 10507/employeeimage:employeeimg
-            ports:
-             - containerPort: 8085
+kind: Pod
+metadata:
+name: employee-pod
+labels:
+app: web
+spec:
+containers:
+- name: web-ctr
+image: 10507/employeeimage:employeeimg
+ports:
+- containerPort: 8085
